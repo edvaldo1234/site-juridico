@@ -1,188 +1,68 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="NorteJUR: sistema de gestão jurídica completo para escritórios de advocacia." />
-  <title>NorteJUR — Sistema de Gestão Jurídica</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="./style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NorteJUR: sistema de gestão jurídica inteligente para escritórios e profissionais do Direito.">
+  <title>NorteJUR — Gestão Jurídica Inteligente</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="header">
-    <div class="container">
-      <nav class="nav" aria-label="Navegação principal">
-        <a class="logo" href="#inicio" aria-label="NorteJUR - início">
-          <span class="logo-icon" aria-hidden="true">⚖️</span>
-          <span class="logo-text">NorteJUR</span>
-        </a>
-        <ul class="nav-links">
-          <li><a href="#funcionalidades">Funcionalidades</a></li>
-          <li><a href="#planos">Plano</a></li>
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#contato">Contato</a></li>
-        </ul>
-        <div class="nav-buttons">
-          <a class="btn btn-outline" href="/auth">Entrar</a>
-          <a class="btn btn-primary" href="/auth">Comece grátis</a>
-        </div>
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a class="brand" href="#inicio" aria-label="NorteJUR — início">Norte<span>JUR</span></a>
+      <nav class="main-nav" aria-label="Navegação principal">
+        <a href="#funcionalidades">Funcionalidades</a>
+        <a href="#planos">Planos</a>
+        <a href="#sobre">Sobre</a>
       </nav>
+      <div class="nav-actions">
+        <a class="btn btn-ghost" href="#entrar">Entrar</a>
+        <a class="btn btn-primary" href="#planos">Comece grátis</a>
+      </div>
     </div>
   </header>
 
   <main>
-    <section id="inicio" class="hero">
-      <div class="container">
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
         <div class="hero-content">
-          <div class="hero-badge">
-            <span class="badge-icon" aria-hidden="true">🎁</span>
-            <span>Teste grátis por 7 dias</span>
+          <p class="eyebrow">Tecnologia para o Direito moderno</p>
+          <h1>Gestão jurídica inteligente para você avançar.</h1>
+          <p class="hero-text">Organize processos, clientes e prazos em um só lugar, com simplicidade, segurança e visão estratégica.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary btn-large" href="#planos">Começar teste gratuito</a>
+            <a class="text-link" href="#funcionalidades">Conhecer funcionalidades <span aria-hidden="true">→</span></a>
           </div>
-          <h1 class="hero-title">
-            Gestão jurídica completa,
-            <span class="gradient-text">em um só lugar</span>
-          </h1>
-          <p class="hero-subtitle">
-            Organize processos, clientes, tarefas, documentos e honorários em uma plataforma segura, integrada ao Supabase e preparada para o seu escritório crescer.
-          </p>
-          <div class="hero-buttons">
-            <a class="btn btn-primary btn-lg" href="/auth">
-              Comece seu teste grátis <span class="btn-icon" aria-hidden="true">→</span>
-            </a>
-            <a class="btn btn-outline btn-lg" href="#funcionalidades">Conheça as funcionalidades</a>
-          </div>
-          <div class="hero-features">
-            <div class="feature-item"><span class="feature-icon">✓</span><span>7 dias grátis</span></div>
-            <div class="feature-item"><span class="feature-icon">✓</span><span>Todas as funções liberadas</span></div>
-            <div class="feature-item"><span class="feature-icon">✓</span><span>Sem cartão no teste</span></div>
-          </div>
+          <p class="trial-note">Plano completo por R$ 79,90/mês · 7 dias grátis · Sem cartão de crédito</p>
         </div>
-        <div class="hero-image" aria-hidden="true">
-          <div class="dashboard-preview">
-            <div class="dashboard-header">
-              <div class="dashboard-logo">NorteJUR</div>
-              <div class="dashboard-menu"><div class="menu-item"></div><div class="menu-item"></div><div class="menu-item"></div></div>
-            </div>
-            <div class="dashboard-content">
-              <div class="dashboard-card"></div>
-              <div class="dashboard-card"></div>
-              <div class="dashboard-card wide"></div>
-            </div>
-          </div>
+        <div class="hero-card" aria-label="Resumo do painel NorteJUR">
+          <div class="card-top"><span class="status-dot"></span><span>Painel NorteJUR</span><span class="card-menu">•••</span></div>
+          <div class="metric-row"><div><small>Processos ativos</small><strong>128</strong></div><div class="metric-positive">+12,4%</div></div>
+          <div class="chart"><span style="height:35%"></span><span style="height:48%"></span><span style="height:42%"></span><span style="height:62%"></span><span style="height:58%"></span><span style="height:78%"></span><span style="height:92%"></span></div>
+          <div class="card-footer"><span>Visão geral</span><span>Este mês</span></div>
         </div>
       </div>
     </section>
 
-    <section class="stats">
+    <section class="features section" id="funcionalidades">
       <div class="container">
-        <div class="stats-grid">
-          <div class="stat-item"><div class="stat-number">1</div><div class="stat-label">Plano simples e completo</div></div>
-          <div class="stat-item"><div class="stat-number">7</div><div class="stat-label">Dias de teste grátis</div></div>
-          <div class="stat-item"><div class="stat-number">100%</div><div class="stat-label">Funções liberadas</div></div>
-          <div class="stat-item"><div class="stat-number">24/7</div><div class="stat-label">Acesso à plataforma</div></div>
-        </div>
+        <div class="section-heading"><p class="eyebrow">Tudo sob controle</p><h2>Menos tarefas manuais.<br>Mais tempo para o que importa.</h2></div>
+        <div class="feature-grid"><article><div class="icon">⌁</div><h3>Processos organizados</h3><p>Acompanhe cada etapa, prazo e movimentação sem perder nenhum detalhe.</p></article><article><div class="icon">◎</div><h3>Clientes conectados</h3><p>Tenha todas as informações dos seus clientes acessíveis e atualizadas.</p></article><article><div class="icon">◷</div><h3>Prazos em dia</h3><p>Receba alertas e mantenha sua rotina jurídica sempre sob controle.</p></article></div>
       </div>
     </section>
 
-    <section id="funcionalidades" class="features">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">Tudo o que seu escritório precisa</h2>
-          <p class="section-subtitle">Funcionalidades completas para uma advocacia mais organizada e produtiva.</p>
-        </div>
-        <div class="features-grid">
-          <article class="feature-card"><div class="feature-icon-box">📋</div><h3>Gestão de processos</h3><p>Centralize casos, partes, prazos e andamentos processuais.</p></article>
-          <article class="feature-card"><div class="feature-icon-box">👥</div><h3>Gestão de clientes</h3><p>Cadastre clientes, contatos, histórico e informações relevantes.</p></article>
-          <article class="feature-card"><div class="feature-icon-box">✅</div><h3>Tarefas e prazos</h3><p>Acompanhe atividades, audiências, reuniões e compromissos.</p></article>
-          <article class="feature-card"><div class="feature-icon-box">📄</div><h3>Documentos</h3><p>Organize documentos, modelos e arquivos do escritório.</p></article>
-          <article class="feature-card"><div class="feature-icon-box">💰</div><h3>Honorários</h3><p>Controle contratos, parcelas, cobranças e recebimentos.</p></article>
-          <article class="feature-card"><div class="feature-icon-box">🤖</div><h3>IA jurídica</h3><p>Registre e acompanhe gerações de documentos e análises com IA.</p></article>
-          <article class="feature-card"><div class="feature-icon-box">📊</div><h3>Relatórios</h3><p>Tenha visibilidade sobre a operação e a rotina do escritório.</p></article>
-          <article class="feature-card"><div class="feature-icon-box">🔒</div><h3>Dados seguros</h3><p>Autenticação, RLS e infraestrutura integrada ao Supabase.</p></article>
-        </div>
-      </div>
+    <section class="pricing section" id="planos">
+      <div class="container pricing-box"><div><p class="eyebrow">Um plano sem complicação</p><h2>NorteJUR Completo</h2><p class="pricing-description">Tudo o que você precisa para administrar seu escritório com eficiência.</p><ul class="benefits"><li>Processos e clientes ilimitados</li><li>Controle de prazos e compromissos</li><li>Dashboard com visão do escritório</li><li>Suporte especializado</li></ul></div><div class="price-card"><p class="price-label">Plano mensal</p><div class="price">R$ 79,90<span>/mês</span></div><p>7 dias grátis · sem cartão</p><a class="btn btn-primary btn-large" href="#comece">Começar agora</a></div></div>
     </section>
 
-    <section id="planos" class="pricing">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">Um plano. Tudo liberado.</h2>
-          <p class="section-subtitle">Sem níveis confusos e sem recursos bloqueados.</p>
-        </div>
-        <div class="pricing-grid">
-          <article class="pricing-card featured">
-            <div class="pricing-badge">Plano único</div>
-            <div class="pricing-header">
-              <h3 class="pricing-name">NorteJUR Completo</h3>
-              <p class="pricing-description">Todas as ferramentas para administrar seu escritório.</p>
-            </div>
-            <div class="pricing-price">
-              <span class="price-currency">R$</span>
-              <span class="price-value">79,90</span>
-              <span class="price-period">/mês</span>
-            </div>
-            <div class="pricing-trial"><span class="trial-icon">🎁</span><span class="trial-text">7 dias grátis, sem cartão necessário</span></div>
-            <ul class="pricing-features">
-              <li><span class="check-icon">✓</span><span>Processos ilimitados</span></li>
-              <li><span class="check-icon">✓</span><span>Clientes ilimitados</span></li>
-              <li><span class="check-icon">✓</span><span>Documentos e modelos</span></li>
-              <li><span class="check-icon">✓</span><span>Gestão de tarefas e prazos</span></li>
-              <li><span class="check-icon">✓</span><span>Gestão de honorários</span></li>
-              <li><span class="check-icon">✓</span><span>Recursos de IA jurídica</span></li>
-              <li><span class="check-icon">✓</span><span>Dados integrados ao Supabase</span></li>
-              <li><span class="check-icon">✓</span><span>Suporte prioritário</span></li>
-            </ul>
-            <a class="btn btn-primary btn-block" href="/auth">Comece seu teste grátis</a>
-            <p class="pricing-note">Após 7 dias, R$ 79,90 por mês. Cancele quando quiser.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="sobre" class="about">
-      <div class="container">
-        <div class="about-content">
-          <div class="about-text">
-            <h2 class="section-title">Feito para a rotina jurídica</h2>
-            <p>O NorteJUR reúne os principais fluxos de um escritório em uma única plataforma, para que você gaste menos tempo alternando ferramentas e mais tempo atendendo seus clientes.</p>
-            <p>A base é integrada ao Supabase, com autenticação, banco de dados e políticas de acesso para apoiar uma operação organizada.</p>
-            <div class="about-features">
-              <div class="about-feature"><span class="about-icon">⚡</span><div><h4>Produtividade</h4><p>Processos e tarefas centralizados.</p></div></div>
-              <div class="about-feature"><span class="about-icon">🔐</span><div><h4>Segurança</h4><p>Dados organizados com controle de acesso.</p></div></div>
-              <div class="about-feature"><span class="about-icon">📈</span><div><h4>Escalabilidade</h4><p>Estrutura pronta para crescer com seu escritório.</p></div></div>
-            </div>
-          </div>
-          <div class="about-image" aria-hidden="true"><div class="about-illustration"><div class="illustration-icon">⚖️</div><div class="illustration-text">NorteJUR</div></div></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="cta">
-      <div class="container">
-        <div class="cta-content">
-          <h2 class="cta-title">Pronto para modernizar seu escritório?</h2>
-          <p class="cta-subtitle">Teste o NorteJUR por 7 dias, com todas as funcionalidades liberadas.</p>
-          <div class="cta-buttons"><a class="btn btn-primary btn-lg" href="/auth">Comece grátis agora <span class="btn-icon">→</span></a></div>
-          <p class="cta-note">Sem cartão necessário no período de teste.</p>
-        </div>
-      </div>
-    </section>
+    <section class="about section" id="sobre"><div class="container about-content"><p class="eyebrow">Feito para simplificar</p><h2>Seu escritório merece uma rotina mais leve.</h2><p>O NorteJUR reúne tecnologia e praticidade para que profissionais do Direito trabalhem com mais clareza, produtividade e tranquilidade.</p></div></section>
   </main>
 
-  <footer id="contato" class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand"><div class="logo"><span class="logo-icon">⚖️</span><span class="logo-text">NorteJUR</span></div><p>Sistema de gestão jurídica inteligente para escritórios modernos.</p></div>
-        <div class="footer-links"><h4>Produto</h4><ul><li><a href="#funcionalidades">Funcionalidades</a></li><li><a href="#planos">Plano</a></li><li><a href="#sobre">Sobre</a></li></ul></div>
-        <div class="footer-links"><h4>Acesso</h4><ul><li><a href="/auth">Entrar</a></li><li><a href="/auth">Criar conta</a></li></ul></div>
-        <div class="footer-contact"><h4>Contato</h4><ul><li>contato@nortejur.com.br</li><li>Suporte para clientes</li></ul></div>
-      </div>
-      <div class="footer-bottom"><p>© 2026 NorteJUR. Todos os direitos reservados.</p></div>
-    </div>
-  </footer>
-
-  <script src="./script.js"></script>
+  <footer class="site-footer"><div class="container"><span class="brand">Norte<span>JUR</span></span><span>© 2026 NorteJUR. Gestão jurídica inteligente.</span></div></footer>
+  <script src="script.js"></script>
 </body>
 </html>
